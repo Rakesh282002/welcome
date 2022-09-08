@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="js/jquery-1.10.2.js"></script>
+</head>
+<body>
+<form action="message.html" method="GET">
+	ENTER NAME: 
+    <input type="text" name="name" />
+<br><br>
+CHOOSE IMAGE :<input type="file" accept="image/*" id="choose-file" name="choose-file" /><br><br>
+    <input type="submit" value="Submit" />
+<script>
+$('input[type=file]').change(function () {
+    console.log(this.files[0].mozFullPath);
+});
+</script>
+</form>
+</body>
+</html>
